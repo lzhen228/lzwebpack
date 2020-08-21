@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "rootDir": ".",
+      "outDir": "dist",
+      "module": "esnext", // 模块引入的方式
+      "target": "es6", // 转换为es6
+      "lib": ["dom", "es7"],
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "allowJs": true, // 在typescript中允许引入js文件
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "strictNullChecks": true,
+      "importHelpers": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "experimentalDecorators": true,
+      "downlevelIteration": true,
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "exclude": ["node_modules", "dist", "build", "mock"]
+  }
